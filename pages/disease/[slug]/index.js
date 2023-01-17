@@ -1,11 +1,12 @@
 import React from "react";
 import { DATABASE } from "@/db";
 
-import { QuestionContainer, RelatedDiseases, Ad } from "@/components";
+import { QuestionContainer, RelatedDiseases, Ad, Meta } from "@/components";
 
 export default function DiseaseDetails({ data }) {
   return (
     <>
+      <Meta title={data.title} description={data.description} />
       <h1 className="title-container">{data.title}</h1>
       <QuestionContainer questions={data.questions} route={data.route} />
       <Ad />

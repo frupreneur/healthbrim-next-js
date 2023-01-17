@@ -17,12 +17,7 @@ export default function Layout({
   url = "https://www.healthbrim.com",
 }) {
   React.useEffect(() => {
-    var ads = document.getElementsByClassName("adsbygoogle").length;
-    for (var i = 0; i < ads; i++) {
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {}
-    }
+    displayAds();
   });
   return (
     <>
@@ -50,4 +45,15 @@ export default function Layout({
       </main>
     </>
   );
+}
+
+async function displayAds() {
+  var ads = document.getElementsByClassName("adsbygoogle").length;
+  for (var i = 0; i < ads; i++) {
+    try {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.log(e);
+    }
+  }
 }
