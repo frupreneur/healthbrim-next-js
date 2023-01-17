@@ -24,6 +24,7 @@ export default function Layout({
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
         crossOrigin="anonymous"
       ></Script>
+
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

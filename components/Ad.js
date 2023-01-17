@@ -3,18 +3,15 @@ import Script from "next/script";
 
 export default function Ad() {
   React.useEffect(() => {
-    // try {
-    //   // @ts-ignore
-    //   (adsbygoogle = window.adsbygoogle || []).push({});
-    // } catch (err) {
-    //   console.error(err);
-    // }
+    try {
+      // @ts-ignore
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.error(err);
+    }
   }, []);
   return (
     <>
-      <Script strategy="lazyOnload" id="adsbygoogle-script">
-        {`(adsbygoogle = window.adsbygoogle || []).push({})`}
-      </Script>
       <div id="ads" class="ad-container" aria-hidden={true}>
         <p style={{ fontStyle: "italic" }}>Advertisement</p>
         <ins
