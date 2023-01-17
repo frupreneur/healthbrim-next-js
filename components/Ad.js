@@ -1,13 +1,6 @@
 import React from "react";
 
 export default function Ad() {
-  React.useEffect(() => {
-    try {
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.log(e);
-    }
-  }, []);
   return (
     <div id="ads" class="ad-container">
       <p style={{ fontStyle: "italic" }}>Advertisement</p>

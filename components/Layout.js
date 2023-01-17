@@ -16,6 +16,14 @@ export default function Layout({
   description = "HealthBrim is a health diagnosis web app that helps people match their symptoms to diseases based on data from reputable health information databases like WHO, Mayo Clinic, Healthline among others.",
   url = "https://www.healthbrim.com",
 }) {
+  React.useEffect(() => {
+    var ads = document.getElementsByClassName("adsbygoogle").length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    }
+  }, []);
   return (
     <>
       <Head>
