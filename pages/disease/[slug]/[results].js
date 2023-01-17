@@ -7,8 +7,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 
 export default function Results({ data: { name, disease, results } }) {
-  console.log(useRouter().query);
-
   const url = `https://www.healthbrim.com/disease/${useRouter().query.slug}/${
     useRouter().query.results
   }`;

@@ -6,7 +6,7 @@ export default function Ad() {
     } catch (err) {
       console.error(err);
     }
-  }, []);
+  });
   return (
     <>
       <div id="ads" class="ad-container" aria-hidden={true}>
