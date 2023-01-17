@@ -23,7 +23,7 @@ export default function Layout({
         (adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {}
     }
-  }, []);
+  });
   return (
     <>
       <Head>
