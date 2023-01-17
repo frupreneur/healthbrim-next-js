@@ -1,10 +1,7 @@
 import React from "react";
-import Script from "next/script";
-
 export default function Ad() {
   React.useEffect(() => {
     try {
-      // @ts-ignore
       (adsbygoogle = window.adsbygoogle || []).push({});
     } catch (err) {
       console.error(err);

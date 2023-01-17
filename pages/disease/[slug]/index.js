@@ -1,12 +1,13 @@
 import React from "react";
 import { DATABASE } from "@/db";
-
+import { useRouter } from "next/router";
 import { QuestionContainer, RelatedDiseases, Ad, Meta } from "@/components";
 
 export default function DiseaseDetails({ data }) {
+  const url = `https://www.healthbrim.com/disease/${useRouter().query.slug}`;
   return (
     <>
-      <Meta title={data.title} description={data.description} />
+      <Meta title={data.title} description={data.description} url={url} />
       <h1 className="title-container">{data.title}</h1>
       <QuestionContainer questions={data.questions} route={data.route} />
       <Ad />

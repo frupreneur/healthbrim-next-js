@@ -10,10 +10,6 @@ export default function Meta({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="shortcut icon" href="/assets/favicon.ico" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charset="UTF-8" />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="article" />
       <meta property="og:description" content={description} />

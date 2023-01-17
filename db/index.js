@@ -1,7 +1,7 @@
 export const menu = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Disclaimer/Privacy", path: "/disclaimer" },
+  { name: "Disclaimer / Privacy", path: "/disclaimer" },
   { name: "Contact us", path: "/contact" },
 ];
 

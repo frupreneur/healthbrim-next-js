@@ -10,6 +10,7 @@ export default function contact() {
         resources like webmd, healthline and Mayo Clinic to make diagnosis
         estimations. PLEASE DON`T TAKE DIAGNOSIS FROM OUR TOOLS AS 100%
         ACCURATE, ALWAYS VISIT YOUR DOCTOR TO CONFIRM ANY DIAGNOSIS."
+        url={`https://www.healthbrim.com/contact`}
       />
       <ContactForm />
     </>

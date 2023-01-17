@@ -6,11 +6,12 @@ export default function disclaimer() {
   return (
     <>
       <Meta
-        title="Policy/Disclaimer - HealthBrim"
+        title="Disclaimer / Privacy Policy- HealthBrim"
         description="HealthBrim diagnosis web app uses data from reputable online health
         resources like webmd, healthline and Mayo Clinic to make diagnosis
         estimations. PLEASE DON`T TAKE DIAGNOSIS FROM OUR TOOLS AS 100%
         ACCURATE, ALWAYS VISIT YOUR DOCTOR TO CONFIRM ANY DIAGNOSIS."
+        url={`https://www.healthbrim.com/disclaimer`}
       />
       <div className="about-wrap">
         <h3>DISCLAIMER</h3>
