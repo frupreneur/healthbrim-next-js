@@ -426,7 +426,9 @@ ul .secondary li {
   width: 100%;
   max-width: 1200px;
   text-align: center;
-  height: 250px !important;
+  min-height: 250px !important;
+  min-width: 300px !important;
+  overflow: "hidden";
 }
 
 .disease-container {

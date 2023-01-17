@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { Header, Footer, Meta } from "../components";
 
 import { Andika } from "@next/font/google";
@@ -16,11 +17,13 @@ export default function Layout({
   description = "HealthBrim is a health diagnosis web app that helps people match their symptoms to diseases based on data from reputable health information databases like WHO, Mayo Clinic, Healthline among others.",
   url = "https://www.healthbrim.com",
 }) {
-  React.useEffect(() => {
-    displayAds();
-  });
   return (
     <>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
+        crossOrigin="anonymous"
+      ></Script>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -32,11 +35,6 @@ export default function Layout({
         <meta property="og:type" content="article" />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
-          crossOrigin="anonymous"
-        ></script>
       </Head>
       <main className={andika.className}>
         <Header />
@@ -45,15 +43,4 @@ export default function Layout({
       </main>
     </>
   );
-}
-
-async function displayAds() {
-  var ads = document.getElementsByClassName("adsbygoogle").length;
-  for (var i = 0; i < ads; i++) {
-    try {
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.log(e);
-    }
-  }
 }
