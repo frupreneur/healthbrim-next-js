@@ -9,7 +9,7 @@ export default function Ad() {
       } catch (err) {
         console.error(err);
       }
-    }, 1000);
+    }, 2000);
     return () => {
       clearTimeout(timer);
     };
