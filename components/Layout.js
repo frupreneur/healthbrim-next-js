@@ -19,11 +19,11 @@ export default function Layout({ children }) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
-        <script
+        {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
           crossOrigin="anonymous"
-        ></script>
+        ></script> */}
       </Head>
       <main className={andika.className}>
         <Header />

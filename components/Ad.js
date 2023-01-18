@@ -1,13 +1,18 @@
 import React from "react";
 export default function Ad() {
   React.useEffect(() => {
-    try {
-      if (typeof window !== "undefined") {
-        (adsbygoogle = window.adsbygoogle || []).push({});
+    let timer = setTimeout(() => {
+      try {
+        if (typeof window !== "undefined") {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      } catch (err) {
+        console.error(err);
       }
-    } catch (err) {
-      console.error(err);
-    }
+    }, 3000);
+    return () => {
+      clearTimeout(timer);
+    };
   });
 
   const ins = (
