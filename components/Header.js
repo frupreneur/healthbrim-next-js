@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { TfiClose } from "react-icons/tfi";
 import { menu } from "../db";
 
 export default function Header() {
@@ -15,10 +16,20 @@ export default function Header() {
           <li
             className="menu-icon"
             onClick={() => {
-              offEl ? setoffEl("") : setoffEl("offEl");
+              if (offEl) {
+                setoffEl("");
+                document.documentElement.style = "overflow: hidden !important";
+              } else {
+                setoffEl("offEl");
+                document.documentElement.style = "overflow: null !important";
+              }
             }}
           >
-            <HiMenuAlt3 className="fa-solid fa-bars" />
+            {!offEl ? (
+              <TfiClose className="fa-solid fa-bars" />
+            ) : (
+              <HiMenuAlt3 className="fa-solid fa-bars" />
+            )}
           </li>
           <ul className={`secondary ${offEl}`}>
             {menu.map((menuItem, i) => (
@@ -26,9 +37,13 @@ export default function Header() {
                 <Link
                   href={menuItem.path}
                   onClick={() => {
-                    window.screen.width <= 800
-                      ? setoffEl("offEl")
-                      : setoffEl(" ");
+                    if (document.documentElement.clientWidth <= 800) {
+                      setoffEl("offEl");
+                      document.documentElement.style =
+                        "overflow: null !important";
+                    } else {
+                      setoffEl(" ");
+                    }
                   }}
                 >
                   {menuItem.name}

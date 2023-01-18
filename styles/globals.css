@@ -93,7 +93,6 @@ h1 {
 
 nav {
   background: var(--color-primary-700);
-  top: 0;
   width: 100%;
   transition: all 0.5s;
   position: relative;
@@ -102,6 +101,8 @@ nav {
   justify-content: space-between !important;
   align-items: center;
   width: 100%;
+  /* position: relative; */
+  z-index: 100;
 }
 
 nav a {
@@ -462,8 +463,7 @@ ul .secondary li {
     gap: 0rem !important;
   }
 
-  ul .secondary {
-    /* display: none; */
+  /* ul .secondary {
     position: absolute;
     background: var(--s);
     top: 4.3rem;
@@ -471,7 +471,26 @@ ul .secondary li {
     padding: 1rem;
     text-align: right;
     display: block;
+  } */
+
+  ul .secondary {
+    position: fixed;
+    background: var(--s);
+    top: 63px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    padding: 1rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
   }
+
   ul .secondary li {
     margin: 0.5rem;
   }
