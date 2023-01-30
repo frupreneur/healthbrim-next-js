@@ -23,7 +23,6 @@ export default function Ad() {
       }
     }, 3000);
     return () => {
-      console.log("unmounting Ad component");
       clearTimeout(timer);
     };
   });

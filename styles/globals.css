@@ -431,6 +431,10 @@ ul .secondary li {
   min-width: 300px !important;
   overflow: "hidden";
 }
+.adHolder {
+  min-height: 250px !important;
+  min-width: 300px !important;
+}
 
 .disease-container {
   border: 1px solid var(--s);
