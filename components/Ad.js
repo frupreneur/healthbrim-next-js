@@ -23,7 +23,7 @@ export default function Ad() {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  });
 
   return (
     <>
