@@ -1,10 +1,11 @@
 import React from "react";
 export default function Ad() {
-  const [state, setState] = React.useState(true);
-
   const adHolder = React.useRef();
   React.useEffect(() => {
-    adHolder.current.innerHTML = `<ins
+    adHolder.current.innerHTML = `
+    
+    
+    <ins
     class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-4787236575206177"
@@ -25,16 +26,14 @@ export default function Ad() {
     return () => {
       clearTimeout(timer);
     };
-  });
+  }, []);
 
   return (
     <>
-      {state && (
-        <div id="ads" className={`ad-container`} aria-hidden={true}>
-          <p style={{ fontStyle: "italic" }}>Advertisement</p>
-          <div className="adHolder" ref={adHolder}></div>
-        </div>
-      )}
+      <div id="ads" className={`ad-container`} aria-hidden="true">
+        <p style={{ fontStyle: "italic" }}>Advertisement</p>
+        <div className="adHolder" ref={adHolder}></div>
+      </div>
     </>
   );
 }

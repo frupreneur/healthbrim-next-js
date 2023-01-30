@@ -81,7 +81,7 @@ body > div {
 h1.title-container {
   /* color: var(--color-grey-900); */
   text-align: center;
-  margin: 1rem;
+  margin: 0.5rem;
   font-size: 2.5rem;
 }
 
@@ -364,7 +364,7 @@ h2 {
   align-items: center;
   gap: 1rem;
   font-size: 1.3rem;
-  color: var(--s);
+  color: var(--color-primary-300);
 
   background: rgba(255, 255, 255, 0.7);
   padding: 1rem;
@@ -455,6 +455,9 @@ ul .secondary li {
 }
 
 @media screen and (max-width: 800px) {
+  h1.title-container {
+    font-size: 1.5rem;
+  }
   h2 {
     font-size: 1.5rem !important;
     margin: 0.8rem !important;

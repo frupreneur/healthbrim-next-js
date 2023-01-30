@@ -72,7 +72,16 @@ export default function QuestionContainer({ questions, route }) {
   return (
     <div className="question-wrapper">
       <div className="questionContainer">
-        <h3>{currentQuestion.question}</h3>
+        <p
+          style={{
+            fontSize: "1.2rem",
+            margin: "0.5rem 0",
+            textAlign: "left",
+            color: "rgba(0, 0, 0 , 0.8)",
+          }}
+        >
+          {currentQuestion.question}
+        </p>
         {currentQuestion.answers.map((answer, i) => (
           <AnswerContainer key={i} value={answer} handleAnswer={handleAnswer} />
         ))}
