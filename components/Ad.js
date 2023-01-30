@@ -16,11 +16,7 @@ export default function Ad() {
     let timer = setTimeout(() => {
       try {
         if (typeof window !== "undefined") {
-          console
-            .log("rendering Ad component")(
-              (adsbygoogle = window.adsbygoogle || [])
-            )
-            .push({});
+          (adsbygoogle = window.adsbygoogle || []).push({});
         }
       } catch (err) {
         console.error(err);
