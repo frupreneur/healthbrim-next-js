@@ -2,10 +2,7 @@ import React from "react";
 export default function Ad() {
   const adHolder = React.useRef();
   React.useEffect(() => {
-    adHolder.current.innerHTML = `
-    
-    
-    <ins
+    adHolder.current.innerHTML = `<ins
     class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-4787236575206177"
@@ -30,7 +27,7 @@ export default function Ad() {
 
   return (
     <>
-      <div id="ads" className={`ad-container`} aria-hidden="true">
+      <div id="ads" className={`ad-container`}>
         <p style={{ fontStyle: "italic" }}>Advertisement</p>
         <div className="adHolder" ref={adHolder}></div>
       </div>
