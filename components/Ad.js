@@ -27,7 +27,7 @@ export default function Ad() {
 
   return (
     <>
-      <div id="ads" className={`ad-container`}>
+      <div id="ads" className={`ad-container`} aria-hidden="true">
         <p style={{ fontStyle: "italic" }}>Advertisement</p>
         <div className="adHolder" ref={adHolder}></div>
       </div>
