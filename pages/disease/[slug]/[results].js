@@ -20,6 +20,7 @@ export default function Results({ data: { name, disease, results } }) {
       />
       <div className="results-wrapper">
         <h2>Diagnosis Results</h2>
+
         {results.correct / results.total > 0.5 ? (
           <p style={{ color: "red" }}>
             From your answers, you posses some symptoms of {name} patients have
@@ -34,6 +35,7 @@ export default function Results({ data: { name, disease, results } }) {
           </p>
         )}
       </div>
+      <Ad />
       <div className="share-container">
         <h2 className="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
         <p className="share-description">
