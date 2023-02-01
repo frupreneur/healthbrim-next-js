@@ -9,6 +9,7 @@ export default function DiseaseDetails({ data }) {
     <>
       <Meta title={data.title} description={data.description} url={url} />
       <h1 className="title-container">{data.title}</h1>
+      <Ad />
       <QuestionContainer questions={data.questions} route={data.route} />
       <Ad />
       <RelatedDiseases presentDiseaseSlug={data.route} />
