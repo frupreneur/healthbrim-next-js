@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Header, Footer, Meta } from "../components";
+import Script from "next/script";
 
 import { Andika } from "@next/font/google";
 
@@ -24,6 +25,7 @@ export default function Layout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
           crossOrigin="anonymous"
         ></script> */}
+        
       </Head>
       <main className={andika.className}>
         <Header />

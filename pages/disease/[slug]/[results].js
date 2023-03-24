@@ -35,7 +35,7 @@ export default function Results({ data: { name, disease, results } }) {
           </p>
         )}
       </div>
-      <Ad />
+
       <div className="share-container">
         <h2 className="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
         <p className="share-description">
