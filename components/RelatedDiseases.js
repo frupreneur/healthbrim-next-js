@@ -30,7 +30,7 @@ export default function RelatedDiseases({ presentDiseaseSlug }) {
 
   return (
     <div>
-      <h2 className="related-title">Popular On HealthBrim</h2>
+      {/* <h2 className="related-title">Popular On HealthBrim</h2> */}
       <div className="related-wrapper">
         {diseasesArr.map((disease) => (
           <DiseaseContainer
