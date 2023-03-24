@@ -66,7 +66,6 @@ export default function Results({ data: { name, disease, results } }) {
           </Link>
         </div>
       </div>
-      <Ad />
       <RelatedDiseases presentDiseaseSlug={disease.route} />
     </>
   );
